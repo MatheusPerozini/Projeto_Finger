@@ -8,6 +8,7 @@ import { InformacoesComponent } from './informacoes/informacoes.component';
 
 import { UsuariosService } from './usuarios.service';
 import { LogonComponent } from './logon/logon.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LogonComponent } from './logon/logon.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [UsuariosService],
   bootstrap: [AppComponent]
