@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup , FormControl } from '@angular/forms';
+import { FormGroup , FormControl , Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-logon',
@@ -10,17 +10,19 @@ import { FormGroup , FormControl } from '@angular/forms';
 export class LogonComponent implements OnInit {
 
   logon = new FormGroup({
-    email : new FormControl(''),
-    senha : new FormControl('')
+    email : new FormControl('', Validators.required),
+    senha : new FormControl('' , Validators.required)
   });
 
   constructor(private router: Router) { }
+
+  errorMessage = false;
 
   navigate() {
     if(this.logon.controls.email.value == 'teste' && this.logon.controls.senha.value == 'teste'){
       this.router.navigate(['/home']);
     }else{
-      alert('Dados incorretos , tente novamente')
+      this.errorMessage = true;
     }
   }
   ngOnInit(): void {
