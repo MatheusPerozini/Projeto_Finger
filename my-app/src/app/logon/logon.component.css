@@ -1,0 +1,39 @@
+#title {
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    position: relative;
+    top: 20px;
+    margin-bottom: 75px;
+}
+
+#container {
+    color: rgb(56, 56, 56);
+    width: 25%;
+    height: 300px;
+    position: relative;
+    top : 100px;
+    font-family: 'Lato', sans-serif;
+    background-color: #66CCAC;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: auto;
+}
+
+input {
+    border-radius: 5px;
+    border : 1px solid black;
+    height: 20px;
+    width: 200px;
+}
+
+#Login {
+    background-color: #3B5FA5;
+    border: 0px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    margin-left: 125px;
+    margin-top: 20px;
+}

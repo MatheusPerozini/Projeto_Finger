@@ -1,0 +1,8 @@
+<div id='container' *ngFor="let i of users">
+    <p class="textContainer">{{i.id}}</p>
+    <img style="margin-left: 100px" src="./baixados.png"/>
+    <p class="textContainer">Nome : {{i.name}}</p>
+    <p class="textContainer">Email : {{i.email}}</p>
+    <p class="textContainer">Cidade : {{i.address.city}}</p>
+    <p class="textContainer">Empresa : {{i.company.name}}</p>
+</div>
